@@ -144,4 +144,13 @@ body main div#tasks-container div button:active {
   background-color: #ff8373;
 }
 
+@media screen and (max-width: 900px) {
+  body main {
+    width: 70%;
+  }
+  body main h1 {
+    font-size: 20px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

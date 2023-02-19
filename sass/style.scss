@@ -119,3 +119,13 @@ body{
         }
     }
 }
+
+@media screen and (max-width: 900px){
+    body main{
+        width: 70%;
+    
+        h1{
+            font-size: 20px;
+        }
+    }
+}
