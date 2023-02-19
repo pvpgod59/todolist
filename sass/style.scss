@@ -127,5 +127,25 @@ body{
         h1{
             font-size: 20px;
         }
+
+        section{
+
+            width: 95%;
+            padding-left: 2.5%;
+    
+            input{
+                width: calc(100% - 50px);
+            }
+
+            button{
+                width: 50px;
+                height: 100%;
+                border-radius: 0 6px 6px 0;
+                border: $blue solid 1px;
+                background-color: $blue;
+                color: white;
+                font-size: 20px;
+            }
+        }
     }
 }

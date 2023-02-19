@@ -151,6 +151,22 @@ body main div#tasks-container div button:active {
   body main h1 {
     font-size: 20px;
   }
+  body main section {
+    width: 95%;
+    padding-left: 2.5%;
+  }
+  body main section input {
+    width: calc(100% - 50px);
+  }
+  body main section button {
+    width: 50px;
+    height: 100%;
+    border-radius: 0 6px 6px 0;
+    border: #3b87f9 solid 1px;
+    background-color: #3b87f9;
+    color: white;
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
