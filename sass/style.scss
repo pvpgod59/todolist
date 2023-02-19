@@ -1,0 +1,121 @@
+@import 'libs/reset.scss';
+
+$blue: #3b87f9;
+$light-blue: #659EF7;
+$white: #fff8f8;
+$red: #eb4026;
+$light-red: #ff8373;
+$light-green: #96f295;
+
+body{
+    background-color: $blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    main{
+        background-color: $white;
+        border-radius: 6px;
+        width: 50%;
+
+        h1{
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            margin-bottom: 30px;
+    
+            input{
+                height: 100%;
+                width: 90%;
+                border-radius: 6px 0 0 6px;
+                border: black solid 1px;
+                border-right: none;
+                padding-left: 10px;
+            }
+
+            button{
+                width: 5%;
+                height: 100%;
+                border-radius: 0 6px 6px 0;
+                border: $blue solid 1px;
+                background-color: $blue;
+                color: white;
+                font-size: 20px;
+
+                &:hover{
+                    background-color: $light-blue;
+                }
+
+                &:active{
+                    background-color: $blue;
+                }
+            }
+        }
+
+        div#tasks-container div{
+            background-color: $light-blue;
+            width: 95%;
+            height: 50px;
+            margin-left: 2.5%;
+            margin-bottom: 30px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2%;
+            cursor: pointer;
+
+            &.checked{
+                background-color: $light-green;
+
+                p{
+                    color: black;
+                    position: relative;
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        height: 2px;
+                        width: 100%;
+                        background-color: $white;
+                        bottom: 50%;
+                    }
+                }
+            }
+
+            p{
+                color: $white;
+                font-weight: 300;
+                font-size: 20px;
+            }
+
+            button{
+                border: none;
+                background-color: $light-red;
+                width: 35px;
+                height: 35px;
+                border-radius: 6px;
+                color: white;
+                font-size: 20px;
+
+                &:hover{
+                    background-color: $red;
+                }
+
+                &:active{
+                    background-color: $light-red;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,147 @@
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #3b87f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body main {
+  background-color: #fff8f8;
+  border-radius: 6px;
+  width: 50%;
+}
+body main h1 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+body main section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 30px;
+}
+body main section input {
+  height: 100%;
+  width: 90%;
+  border-radius: 6px 0 0 6px;
+  border: black solid 1px;
+  border-right: none;
+  padding-left: 10px;
+}
+body main section button {
+  width: 5%;
+  height: 100%;
+  border-radius: 0 6px 6px 0;
+  border: #3b87f9 solid 1px;
+  background-color: #3b87f9;
+  color: white;
+  font-size: 20px;
+}
+body main section button:hover {
+  background-color: #659EF7;
+}
+body main section button:active {
+  background-color: #3b87f9;
+}
+body main div#tasks-container div {
+  background-color: #659EF7;
+  width: 95%;
+  height: 50px;
+  margin-left: 2.5%;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2%;
+  cursor: pointer;
+}
+body main div#tasks-container div.checked {
+  background-color: #96f295;
+}
+body main div#tasks-container div.checked p {
+  color: black;
+  position: relative;
+}
+body main div#tasks-container div.checked p::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #fff8f8;
+  bottom: 50%;
+}
+body main div#tasks-container div p {
+  color: #fff8f8;
+  font-weight: 300;
+  font-size: 20px;
+}
+body main div#tasks-container div button {
+  border: none;
+  background-color: #ff8373;
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  color: white;
+  font-size: 20px;
+}
+body main div#tasks-container div button:hover {
+  background-color: #eb4026;
+}
+body main div#tasks-container div button:active {
+  background-color: #ff8373;
+}
+
+/*# sourceMappingURL=style.css.map */
